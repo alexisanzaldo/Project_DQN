@@ -1,7 +1,7 @@
 from gym import Env
 
 import gym
-from simple_dqn_torch_2020 import Agent
+
 from utils import plotLearning
 from utils import plot_learning_curve
 import numpy as np
