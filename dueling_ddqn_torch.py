@@ -55,8 +55,8 @@ class DuelingDeepQNetwork(nn.Module):
         self.A = nn.Linear(128, n_actions)
 
 
-        #self.optimizer = optim.Adam(self.parameters(), lr=lr)
-        self.optimizer = optim.RMSprop(self.parameters(), lr=lr)
+        self.optimizer = optim.Adam(self.parameters(), lr=lr)
+        #self.optimizer = optim.RMSprop(self.parameters(), lr=lr)
 
 
         self.loss = nn.MSELoss()
