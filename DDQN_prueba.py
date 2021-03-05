@@ -53,8 +53,8 @@ class DuelingDeepQNetwork(nn.Module):
         #self.A = nn.Linear(512, n_actions)
 
         #Pruebas: {(64, 64), (128, 64), (256, 64), (512, 64)}
-        self.fc1 = nn.Linear(*input_dims, 128)
-        self.fc2 = nn.Linear(128,64)
+        self.fc1 = nn.Linear(*input_dims, 512)
+        self.fc2 = nn.Linear(512,64)
         self.V = nn.Linear(64, 1)
         self.A = nn.Linear(64, n_actions)
 
